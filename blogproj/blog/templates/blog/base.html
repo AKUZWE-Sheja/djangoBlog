@@ -87,6 +87,7 @@
           <div class="col-md-8">
               {%  if messages%}
                 {% for message in messages %}
+                <!-- message.tags helps us know what type of message is this? -->
                     <div class="alert-{{ message.tags }}">
                         {{ message }}
                     </div>
